@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fatoumata BAH — Cybersecurity &amp; AI</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══ SIDEBAR ══ -->
+  <aside class="sidebar">
+
+    <div class="avatar-wrap">
+      <img src="assets/photo.jpg" alt="Fatoumata BAH" />
+    </div>
+
+    <div class="sidebar-name">Fatoumata BAH</div>
+    <div class="sidebar-role">Cybersecurity Engineer</div>
+    <div class="sidebar-divider"></div>
+
+    <ul class="sidebar-nav">
+      <li><button class="active" data-view="home"><span class="nav-icon"><i class="bi bi-house-fill"></i></span> Home</button></li>
+      <li><button data-view="about"><span class="nav-icon"><i class="bi bi-person-fill"></i></span> About</button></li>
+      <li><button data-view="skills"><span class="nav-icon"><i class="bi bi-gear-fill"></i></span> Skills</button></li>
+      <li><button data-view="projects"><span class="nav-icon"><i class="bi bi-folder-fill"></i></span> Projects</button></li>
+      <li><button data-view="experience"><span class="nav-icon"><i class="bi bi-briefcase-fill"></i></span> Experience</button></li>
+      <li><button data-view="contact"><span class="nav-icon"><i class="bi bi-envelope-fill"></i></span> Contact</button></li>
+    </ul>
+
+    <div class="sidebar-social">
+      <a href="mailto:fatoumata.bah@aims-senegal.com" class="social-link" title="Email"><i class="bi bi-envelope-fill"></i></a>
+      <a href="https://github.com/fatoumatabahaims" target="_blank" class="social-link" title="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/fatoumata-bah-28566639b" target="_blank" class="social-link" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+  </aside>
+
+  <!-- ══ MAIN ══ -->
+  <main class="main-content">
+
+    <!-- HOME -->
+    <div class="view active" id="view-home">
+      <div class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+          <p class="hero-greeting">Hello, I'm <span>Fatoumata BAH</span></p>
+          <h1 class="hero-name">Cyber<span class="highlight">security</span><br>Engineer</h1>
+          <p class="hero-typing">
+            <span class="typed-text" id="typed-text"></span><span class="typing-cursor"></span>
+          </p>
+          <p class="hero-desc">
+            Master's student in Data Science and Computer Security at AIMS Sénégal.
+            Specialized in penetration testing, SIEM/SOC monitoring, cryptography, and AI security.
+            Mastercard Foundation Scholar.
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <button class="btn btn-hero-primary" id="btn-projects">View Projects</button>
+            <button class="btn btn-hero-outline" id="btn-contact">Contact Me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="view" id="view-about">
+      <span class="section-tag">About</span>
+      <h2 class="section-title">Who <em>Am I?</em></h2>
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-7 about-text">
+          <p>I hold a <strong>Bachelor's degree in Computer Engineering</strong> from the University of Ziguinchor (2024) and am currently pursuing a <strong>cooperative Master's in Data Science and Computer Security</strong> at AIMS Sénégal, one of Africa's most rigorous mathematical institutes.</p>
+          <p>I specialize in <strong>network security, vulnerability analysis, cryptography, and SIEM monitoring</strong>. As Academic Focal Point at AIMS, I combine technical precision with a strong sense of responsibility.</p>
+          <p>I am driven to contribute to the <strong>protection of information systems</strong> and tackle digital security challenges across Africa and beyond.</p>
+          <p class="about-location">
+            <i class="bi bi-geo-alt-fill me-1"></i> Mbour, Sénégal &nbsp;&nbsp;
+            <i class="bi bi-flag-fill me-1"></i> Senegalese &nbsp;&nbsp;
+            <i class="bi bi-chat-dots-fill me-1"></i> French (native) &nbsp; English B2
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <div class="row g-3">
+            <div class="col-6"><div class="stat-card"><div class="stat-number">5+</div><div class="stat-label">Academic Projects</div></div></div>
+            <div class="col-6"><div class="stat-card"><div class="stat-number">3</div><div class="stat-label">Months Internship</div></div></div>
+            <div class="col-6"><div class="stat-card"><div class="stat-number">90%</div><div class="stat-label">Network Security</div></div></div>
+            <div class="col-6"><div class="stat-card"><div class="stat-number">AIMS</div><div class="stat-label">Mastercard Scholar</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="view" id="view-skills">
+      <span class="section-tag">Skills</span>
+      <h2 class="section-title">Technical <em>Stack</em></h2>
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="skill-category-title">Cybersecurity</div>
+          <div class="skill-label"><span>Network Security / Firewall</span><span class="skill-percent">90%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="90"></div></div>
+          <div class="skill-label"><span>SIEM / SOC Wazuh</span><span class="skill-percent">82%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="82"></div></div>
+          <div class="skill-label"><span>Cryptography / PKI</span><span class="skill-percent">75%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="75"></div></div>
+          <div class="skill-label"><span>IDS / IPS</span><span class="skill-percent">72%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="72"></div></div>
+          <div class="skill-label"><span>Pentest / Audit</span><span class="skill-percent">70%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="70"></div></div>
+        </div>
+        <div class="col-lg-4">
+          <div class="skill-category-title">Programming &amp; AI</div>
+          <div class="skill-label"><span>Python</span><span class="skill-percent">85%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="85"></div></div>
+          <div class="skill-label"><span>Linux / Bash</span><span class="skill-percent">85%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="85"></div></div>
+          <div class="skill-label"><span>Java</span><span class="skill-percent">75%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="75"></div></div>
+          <div class="skill-label"><span>HTML / CSS</span><span class="skill-percent">80%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="80"></div></div>
+          <div class="skill-label"><span>React</span><span class="skill-percent">70%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="70"></div></div>
+          <div class="skill-label"><span>Deep Learning</span><span class="skill-percent">65%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="65"></div></div>
+        </div>
+        <div class="col-lg-4">
+          <div class="skill-category-title">Networking</div>
+          <div class="skill-label"><span>Firewall Configuration</span><span class="skill-percent">82%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="82"></div></div>
+          <div class="skill-label"><span>Static / Dynamic Routing</span><span class="skill-percent">75%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="75"></div></div>
+          <div class="skill-label"><span>VPN / Tunneling</span><span class="skill-percent">65%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-w="65"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="view" id="view-projects">
+      <span class="section-tag">Projects</span>
+      <h2 class="section-title">What I've <em>Built</em></h2>
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="project-card">
+            <div class="project-icon">🚦</div>
+            <div class="project-name">Computer Vision — Road Traffic Detection and Tracking</div>
+            <div class="project-where">AIMS Sénégal &nbsp; Apr. 2026 (ongoing)</div>
+            <p class="project-desc">Real-time object detection covering cars, buses, motorcycles, pedestrians, and road signs using YOLOv11. Multi-object tracking with persistent IDs via SORT/ByteTrack and per-class passage counting. Web interface for video upload and real-time result visualization.</p>
+            <div><span class="tech-badge">YOLOv11</span><span class="tech-badge">Python</span><span class="tech-badge">SORT/ByteTrack</span><span class="tech-badge">Computer Vision</span><span class="tech-badge">Web Interface</span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project-card">
+            <div class="project-icon">🔐</div>
+            <div class="project-name">Java Cryptography Suite</div>
+            <div class="project-where">AIMS Sénégal &nbsp; 2025 – 2026</div>
+            <p class="project-desc"><strong style="color:var(--text)">SafePass</strong> is a password vault built with AES-256-GCM, PBKDF2, and Spring Boot REST. <strong style="color:var(--text)">DocSign</strong> handles digital signatures using RSA/ECDSA and X.509 certificates. <strong style="color:var(--text)">SecureTalk</strong> is a secure messaging app using hybrid RSA and AES encryption over WebSocket.</p>
+            <div><span class="tech-badge">Java</span><span class="tech-badge">AES-256</span><span class="tech-badge">RSA/ECDSA</span><span class="tech-badge">Spring Boot</span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project-card">
+            <div class="project-icon">🧠</div>
+            <div class="project-name">Deep Learning — Image Classification</div>
+            <div class="project-where">AIMS Sénégal &nbsp; 2025 – 2026</div>
+            <p class="project-desc">Training image classification models using CNN and Transfer Learning architectures. The application was deployed on Hugging Face Spaces for public access and demonstration.</p>
+            <div><span class="tech-badge">Python</span><span class="tech-badge">CNN</span><span class="tech-badge">Transfer Learning</span><span class="tech-badge">Hugging Face</span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project-card">
+            <div class="project-icon">📡</div>
+            <div class="project-name">Secure Network with SIEM Wazuh</div>
+            <div class="project-where">AIMS Sénégal &nbsp; 2025</div>
+            <p class="project-desc">Installation of Wazuh for log collection and analysis with IDS/IPS rule creation. Firewall configuration using pfSense and iptables combined with controlled network attack simulation.</p>
+            <div><span class="tech-badge">Wazuh</span><span class="tech-badge">pfSense</span><span class="tech-badge">IDS/IPS</span><span class="tech-badge">Linux</span></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project-card">
+            <div class="project-icon">🕵️</div>
+            <div class="project-name">Web Application Security Audit</div>
+            <div class="project-where">UASZ &nbsp; 2023</div>
+            <p class="project-desc">Penetration testing based on the OWASP Top 10 methodology applied to a management application. A full audit report with corrective recommendations was produced and delivered.</p>
+            <div><span class="tech-badge">Pentest</span><span class="tech-badge">OWASP Top 10</span><span class="tech-badge">Audit</span><span class="tech-badge">Report</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="view" id="view-experience">
+      <span class="section-tag">Experience</span>
+      <h2 class="section-title">My <em>Journey</em></h2>
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <div class="exp-col-title">Education</div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Oct. 2025 — Present</div>
+              <div class="timeline-title">Master — Data Science and Computer Security</div>
+              <div class="timeline-org">AIMS Sénégal, Mbour &nbsp; Mastercard Foundation Scholar</div>
+              <ul class="timeline-points">
+                <li>18-month cooperative program, Computer Security track</li>
+                <li>Network security, cryptography, AI and computer vision</li>
+                <li>Academic Focal Point</li>
+              </ul>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2020 – 2024</div>
+              <div class="timeline-title">Bachelor — Computer Engineering</div>
+              <div class="timeline-org">University of Ziguinchor (UASZ)</div>
+              <ul class="timeline-points">
+                <li>Networks, web development, information systems and databases</li>
+              </ul>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2020</div>
+              <div class="timeline-title">High School Diploma — Series S2</div>
+              <div class="timeline-org">Lycée Djignabo Bassene, Ziguinchor</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="exp-col-title">Work Experience</div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Feb. – Apr. 2024</div>
+              <div class="timeline-title">Intern — Development and Information Systems</div>
+              <div class="timeline-org">IT Department, UASZ, Ziguinchor</div>
+              <ul class="timeline-points">
+                <li>Built the institutional website using Spring Boot backend and React frontend</li>
+                <li>Analyzed client-server architecture and identified security improvement areas</li>
+                <li>Applied best practices including authentication and session management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="view" id="view-contact">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-title">Let's <em>Connect</em></h2>
+      <div style="max-width:580px">
+        <p style="font-size:14px;color:var(--muted);margin-bottom:2rem;font-weight:300;line-height:1.8;">
+          Available from end of June 2026 for internship or job opportunities in cybersecurity, penetration testing, or AI security. Feel free to reach out!
+        </p>
+        <div class="d-flex flex-column gap-3">
+          <a href="mailto:fatoumata.bah@aims-senegal.com" class="contact-item">
+            <i class="bi bi-envelope-fill fs-5"></i>
+            <div><span class="contact-label">Email</span><span class="contact-value">fatoumata.bah@aims-senegal.com</span></div>
+          </a>
+          <a href="tel:+221767466691" class="contact-item">
+            <i class="bi bi-telephone-fill fs-5"></i>
+            <div><span class="contact-label">Phone</span><span class="contact-value">+221 76 746 66 91</span></div>
+          </a>
+          <a href="https://github.com/fatoumatabahaims" target="_blank" class="contact-item">
+            <i class="bi bi-github fs-5"></i>
+            <div><span class="contact-label">GitHub</span><span class="contact-value">github.com/fatoumatabahaims</span></div>
+          </a>
+          <a href="https://www.linkedin.com/in/fatoumata-bah-28566639b" target="_blank" class="contact-item">
+            <i class="bi bi-linkedin fs-5"></i>
+            <div><span class="contact-label">LinkedIn</span><span class="contact-value">linkedin.com/in/fatoumata-bah-28566639b</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
